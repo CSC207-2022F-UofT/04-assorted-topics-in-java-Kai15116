@@ -29,12 +29,12 @@ class DrivableMap {
      */
 
     /**
-     * If the id does not appear as a key in drivable_map,
-     * then add the key,item pair to drivable_map.
+     * If the id does not appear as a key in this map,
+     * then add the key,item pair to this map.
      *
      * @param id key corresponding to item
-     * @param item new drivable item to be added in the drivable_map
-     * @return whether item was added to drivable_map
+     * @param item new drivable item to be added in this map
+     * @return whether item was added to this map
      */
     public boolean addDrivable(String id, Drivable item){
         if (!drivable_map.containsKey(id)) {
@@ -55,8 +55,11 @@ class DrivableMap {
      */
 
     /**
-     * Returns true iff there is at least one item in drivable_map
+     * Returns true iff there is at least one item in this map
      * that has a maxSpeed >= the speed given.
+     *
+     * @return whether the map contains item that is faster than
+     *         the given speed
      *
      */
     public boolean hasFasterThan(int speed){
@@ -78,7 +81,7 @@ class DrivableMap {
     /**
      * Returns List of all Tradable items in this map
      *
-     * @return List of all Tradable items in drivable_map
+     * @return List of all Tradable items in this map
      */
     public List<Tradable> getTradable() {
         List<Tradable> result = new ArrayList<>();
