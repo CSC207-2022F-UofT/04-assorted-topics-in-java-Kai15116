@@ -82,7 +82,8 @@ public class Trader<T> {
     /**
      * Return selling price of the given item
      *
-     * @return selling price of item
+     * @return Selling price of the item if it's Tradable.
+     *         If it's not Tradable, return Tradable.MISSING_PRICE
      */
     public int getSellingPrice(T item){
         if (item instanceof Tradable)

@@ -32,6 +32,9 @@ class DrivableMap {
      * If the id does not appear as a key in drivable_map,
      * then add the key,item pair to drivable_map.
      *
+     * @param id key corresponding to item
+     * @param item new drivable item to be added in the drivable_map
+     * @return whether item was added to drivable_map
      */
     public boolean addDrivable(String id, Drivable item){
         if (!drivable_map.containsKey(id)) {
